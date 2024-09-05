@@ -8,8 +8,7 @@
     <link rel="stylesheet" href=" {{ asset ('assets/bootstrap-5.3.2-dist/css/bootstrap.min.css')}}">
 </head>
 <body>
-    @extends('template')
-    @section('content')
+  
 
     <div class="col-md-10 container pt-5">
 
@@ -73,7 +72,6 @@
         </form>
     </div>
 
-    {{-- @endsection --}}
 </body>
 </html>
 <script src="{{ asset ('assets/bootstrap-5.3.2-dist/js/bootstrap.min.js')}}"></script>

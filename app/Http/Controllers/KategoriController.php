@@ -52,9 +52,6 @@ class KategoriController extends Controller
             if ($user->foto) {
                 Storage::delete('foto/' .$user->foto);
             }
-            // Session::flash('pesan', 'Data berhasil dihapus');
-        } else {
-            // Session::flash('pesan', 'Data gagal dihapus');
         }
 
         return redirect('kategori');
@@ -70,23 +67,7 @@ class KategoriController extends Controller
            'nm_kategori' => $request->nm_kategori
         ]);
 
-        // if ($update) {
-        //     Session::flash('pesan', 'Data berhasil diupdate');
-        // } else {
-        //     Session::flash('pesan', 'Data gagal diupdate');
-        // }
-
         $produk = kategori::findOrFail($request->id);
-
-        // $fileName = '';
-
-        // $extFile = $request->file('foto');
-        // $filename = time() . "." . $extFile->getClientOriginalName();
-        // $path = $extFile->storeAs('foto', $filename);
-
-
-        // $produk->Foto = $filename;
-        // $produk->save();
 
         if ($produk->foto) {
             Storage::delete('foto' . $produk->foto);

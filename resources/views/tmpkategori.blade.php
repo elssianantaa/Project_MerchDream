@@ -115,7 +115,7 @@
             </button>
         </div>
         <div class="row gap-5" style="padding-top: 60px;">
-            @foreach ($item->produks as $produk)
+            @foreach ($item->produks->slice(0, 4) as $produk)
             <!-- View -->
             <div class="col-md-2 card"
                 style="width: 200px; height: 300px; border: none; border-radius: 20px; box-shadow: #000000 2px 2px 20px; margin-bottom: 20px;">

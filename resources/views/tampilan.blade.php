@@ -200,7 +200,7 @@
     <div class="container">
         <h2>Shop</h2>
         <div class="row gap-5" style="padding-top: 60px;">
-            @foreach ($produk->slice(0, 4) as $key => $item)
+            @foreach ($produk->slice(0, 8) as $key => $item)
                 <div class="col-md-2 card d-flex"
                     style="width: 200px; height: 300px; border: none; border-radius: 20px; box-shadow: #000000 2px 2px 20px; margin-bottom: 20px;">
                     <a href="{{ route('produk.detail', ['id' => $item->id]) }}">

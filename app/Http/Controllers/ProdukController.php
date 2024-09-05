@@ -49,7 +49,6 @@ class ProdukController extends Controller
             'desk' =>['required'],
             'stok' =>['required'],
             'harga' => 'required',
-            'kategoris_id' => ['kategoris_id']
         ]);
 
         $fileName = '';
@@ -136,7 +135,7 @@ class ProdukController extends Controller
     }
 
     public function tmpkat(){  
-        $data['kategori'] = kategori::all();
+        $data['kategori'] = kategori::take(4)->get();
         return view('tmpkategori', $data);
     }
 
