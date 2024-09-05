@@ -103,16 +103,10 @@
             <textarea class="form-control" id="alamat" name="alamat" rows="3" ></textarea>
         </div>
         
-        <div class="form-group">
-            <label for="waktu_pemesanan">Waktu Pemesanan</label>
-            <input type="datetime-local" class="form-control" id="waktu_pemesanan" name="wktu_pemesanan" >
-        </div>
-        
         <button type="submit" class="btn btn-outline-secondary mt-3">Lanjutkan ke Pembayaran</button>
 
 
     </form>
-        <!-- Daftar Produk -->
         <table class="table table-bordered mt-4">
             <thead>
                 <tr>
@@ -126,7 +120,6 @@
             <tbody>
                 @foreach ($cart as $id => $item)
                 <tr>
-                    <!-- Pastikan URL foto valid -->
                     <td>
                         @if(isset($item['photo']))
                             <img src="{{ asset('storage/public/' . $item['photo']) }}" alt="Foto Produk" width="100">

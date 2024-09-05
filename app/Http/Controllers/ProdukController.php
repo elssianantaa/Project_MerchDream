@@ -9,6 +9,7 @@ use App\Models\produk;
 use App\Models\User;
 use Illuminate\Contracts\Session\Session;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Password;
 use Illuminate\Support\Facades\Storage;
 
 class ProdukController extends Controller
@@ -41,6 +42,15 @@ class ProdukController extends Controller
     }
 
     public function add(Request $request){
+
+        $validateData = $request->validate([
+            'produk' =>['required', 'min:3'],
+            'foto' => 'image',
+            'desk' =>['required'],
+            'stok' =>['required'],
+            'harga' => 'required',
+            'kategoris_id' => ['kategoris_id']
+        ]);
 
         $fileName = '';
 

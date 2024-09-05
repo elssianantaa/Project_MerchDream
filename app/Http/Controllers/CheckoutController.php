@@ -55,16 +55,6 @@ class CheckoutController extends Controller
             'status' => 'Sedang Diproses',
         ]);
 
-
-        // 3. Perbarui stok produk dan simpan detail pesanan
-        // foreach ($cartItems as $item) {
-        //     // Kurangi stok produk
-        //     $product = produk::find($item->product_id);
-        //     if ($product) {
-        //         $product->stok -= $item->stok;
-        //         $product->save();
-        //     }
-
             cart::destroy($request->user_id);
         return redirect('history');
 

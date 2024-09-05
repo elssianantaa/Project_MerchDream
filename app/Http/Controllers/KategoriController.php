@@ -26,9 +26,9 @@ class KategoriController extends Controller
     }
 
     public function add(Request $request){
-        // $validateData = $request->validate([
-        //     'produk' =>['required']
-        // ])
+        $validateData = $request->validate([
+            'nm_kategori' =>['required']
+        ]);
 
         $fileName = '';
 

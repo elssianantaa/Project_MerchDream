@@ -76,23 +76,18 @@ Route::middleware('StatusLogin')->group(function () {
 
     Route::post('/shop', [ProdukController::class, 'searchShop']);
     Route::get('/profil', [UserController::class, 'showProfil']);
+    Route::post('/cart',  [CartController::class, 'search']);
+    Route::get('/order', [CheckoutController::class, 'index'])->name('checkout.index');
+    
+    Route::post('/order', [CheckoutController::class, 'store'])->name('store');
+    
+    Route::get('/history', [CheckoutController::class, 'showhistoryy']);
+    Route::post('/history/create', [CheckoutController::class, 'historyy']);
+    
+    Route::get('/dataPenjualan', [CheckoutController::class, 'showorder']);
+    Route::get('/dataCart', [CartController::class, 'showcartdt']);
 });
 
-// Route untuk menampilkan halaman checkout
-// Route::get('/order', [CheckoutController::class, 'index'])->name('checkout.index');
-
-// // Route untuk menyimpan data pesanan
-// Route::post('/order', [CheckoutController::class, 'store'])->name('checkout.store');
-// Route::get('/dtOrder', [CheckoutController::class, 'showdtOrder']);
-Route::post('/cart',  [CartController::class, 'search']);
-Route::get('/order', [CheckoutController::class, 'index'])->name('checkout.index');
-
-Route::post('/order', [CheckoutController::class, 'store'])->name('store');
-
-Route::get('/history', [CheckoutController::class, 'showhistoryy']);
-Route::post('/history/create', [CheckoutController::class, 'historyy']);
-Route::get('/dataPenjualan', [CheckoutController::class, 'showorder']);
-Route::get('/dataCart', [CartController::class, 'showcartdt']);
 
 
 
@@ -104,8 +99,8 @@ Route::get('/dataCart', [CartController::class, 'showcartdt']);
 
 
 
-// Route::get('/tmpkategori', [ProdukController::class, 'tmpkattt']);
-// Route::get('/tmpkategori', [ProdukController::class, 'tmpkatttt']);
+
+
 
 
 

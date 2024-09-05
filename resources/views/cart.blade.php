@@ -85,9 +85,7 @@
     </nav>
     </div>
 
-    {{-- @extends('layouts.app')
-
-    @section('content') --}}
+  
    <div class="container mt-5 pt-5">
       <h1>Keranjang</h1>
     @if (count($cart) > 0)
@@ -97,7 +95,7 @@
                 <table class="table align-middle table-hover">
                     <thead class="table-light">
                         <tr class="text-center">
-                            <th><input type="checkbox" id="checkAll"></th> <!-- Check All -->
+                            <th><input type="checkbox" id="checkAll"></th> 
                             <th>Produk</th>
                             <th>Harga</th>
                             <th>Kuantitas</th>
@@ -111,7 +109,6 @@
                                 <td>
                                     <input type="checkbox" name="selected_items[]" value="{{ $id }}">
                                 </td>
-                                <!-- Pastikan URL foto valid -->
                                 <td>
                                     <div class="product-img">
                                         @if(isset($item['photo']))
@@ -119,9 +116,9 @@
                                         @else
                                             <img src="{{ asset('images/default-product.png') }}" alt="Foto Tidak Tersedia" width="100" class="img-thumbnail">
                                         @endif
+                                        {{ $item['name'] }}
                                     </div>
                                 </td>
-                                <td >{{ $item['name'] }}</td>
                                 <td >Rp {{ number_format($item['price'], 0, ',', '.') }}</td>
                                 <td >{{ $item['quantity'] }}</td>
                                 <td >Rp {{ number_format($item['total_price'], 0, ',', '.') }}</td>

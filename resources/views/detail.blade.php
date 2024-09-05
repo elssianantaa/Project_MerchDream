@@ -105,7 +105,7 @@
             <div class="row">
                 <div class="col-md-6 card d-flex" 
                 style="width: 400px; height:340px; border: none; border-radius: 20px; box-shadow: #8c8a8a 2px 2px 10px;">
-                    <form action="{{ route('produk.updateStok', $produk->id) }}" method="POST">
+                    {{-- <form action="{{ route('produk.updateStok', $produk->id) }}" method="POST"> --}}
                         @csrf
                     <img src="{{ asset('storage/public/'.$produk->foto) }}" alt="" style="border-radius: 15px; margin-top: 10px; width: 375px; height: 320px; object-fit: cover;">
 

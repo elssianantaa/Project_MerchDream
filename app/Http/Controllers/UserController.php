@@ -44,8 +44,7 @@ class UserController extends Controller
         $validateData = $request->validate([
             'name' =>['required', 'min:3'],
             'email' =>['required', 'email'],
-            // 'password' =>['required', Password::min(4)->symbols()->mixedCase()],
-            // 'levels_id' => 'required',
+            'password' =>['required'],
             'foto' => 'image'
         ]);
 
@@ -96,7 +95,7 @@ class UserController extends Controller
         $validateData = $request->validate([
             'name' =>['required', 'min:3'],
             'email' =>['required', 'email'],
-            // 'password' =>['required', Password::min(4)->symbols()->mixedCase()],
+            'password' =>['required'],
             'levels_id' => 'required',
             'foto' => 'image'
         ]);
@@ -117,20 +116,6 @@ class UserController extends Controller
             'foto' => $fileName
         ]);
 
-        // // $user = User::create($validateData);
-        // if ($user) {
-        //     Session::flash('pesan', 'Data berhasil disimpan');
-        // } else { 
-        //     Session::flash('pesan', 'Data gagal disimpan');
-        // }
-
-        // User::create($validateData);
-
-        // User::create([
-        //     'name' => $request->name,
-        //     'email' => $request->email,
-        //     'password' => $request->password,
-        // ]);
         
         return redirect('user');
     }
@@ -138,14 +123,6 @@ class UserController extends Controller
     public function delete(Request $request){
         $user = User::find($request->id);
         $delete = User::where('id', $request->id)->delete();
-        // if ($delete) {
-        //     if ($user->foto) {
-        //         Storage::delete('foto/' .$user->foto);
-        //     }
-        //    Session::flash('pesan', 'Data berhasil dihapus');
-        // } else {
-        //     Session::flash('pesan', 'Data gagal dihapus');
-        // }
 
         return redirect('user');
     }

@@ -97,10 +97,10 @@
                             <a href="/tmpkategori" class="nav-link animated-link" style="color: #b5b5b5;">Categories</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link animated-link" style="color: #b5b5b5;">AboutUs</a>
+                            <a href="#wcu" class="nav-link animated-link" style="color: #b5b5b5;">AboutUs</a>
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link animated-link" style="color: #b5b5b5;">ContactUs</a>
+                            <a href="#ftr" class="nav-link animated-link" style="color: #b5b5b5;">ContactUs</a>
                         </li>
                     </ul>
                 </div>
@@ -171,8 +171,6 @@
                         <img src="imgg/album.jpeg"  style="border-radius: 20px;box-shadow:#aaa0b5 20px 2px 0px;width: 180px;height: 260px;" alt="Sample Image" id="image">
                         <div class="text-overlay" style="margin-left: -60px;margin-top:130px;color:#aaa0b5;font-size: 20px;font-weight: bold;">Album</div>
                         </div>
-                        {{-- <img src="imgg/album.jpeg" class="" style="border-radius: 20px;box-shadow:#000000 2px 2px 20px;width: 180px;height: 260px;"
-                            alt=""> --}}
                      </div>
 
 
@@ -181,8 +179,6 @@
                         <img src="imgg/ls.jpeg"  style="border-radius: 20px;box-shadow:#aaa0b5 20px 2px 0px;width: 180px;height: 260px;" alt="Sample Image" id="image">
                         <div class="text-overlay" style="margin-left: -60px;margin-top:130px;color:#aaa0b5;font-size: 20px;font-weight: bold;">LightStick</div>
                         </div>
-                        {{-- <img src="imgg/album.jpeg" class="" style="border-radius: 20px;box-shadow:#000000 2px 2px 20px;width: 180px;height: 260px;"
-                            alt=""> --}}
                      </div>
 
 
@@ -191,8 +187,6 @@
                        <img src="imgg/photo.jpeg"  style="border-radius: 20px;box-shadow:#aaa0b5 20px 2px 0px;width: 180px;height: 260px;" alt="Sample Image" id="image">
                        <div class="text-overlay" style="margin-left: -55px;margin-top:130px;color:#aaa0b5;font-size: 20px;font-weight: bold;">PhotoCard & Poster</div>
                        </div>
-                       {{-- <img src="imgg/album.jpeg" class="" style="border-radius: 20px;box-shadow:#000000 2px 2px 20px;width: 180px;height: 260px;"
-                           alt=""> --}}
                     </div>
 
                 </div>
@@ -201,7 +195,6 @@
 
     
 
-    <!-- Dalam view: nama_view.blade.php -->
 
 <div style="background-color: white;">
     <div class="container">
@@ -227,7 +220,7 @@
 </div>
 
 
-        <div class="container pt-5" style="background-color: white;">
+        <div id="wcu" class="container pt-5" style="background-color: white;">
                 <h2>Why Choose Us</h2>
                 <div class="pt-4 row">
 
@@ -239,7 +232,7 @@
                                         <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5zm1.294 7.456A2 2 0 0 1 4.732 11h5.536a2 2 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456M12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2"/>
                                       </svg>
                             </div>
-                            <span>Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. <br> Voluptatem ratione </span>
+                            <span>Kami percaya bahwa pengiriman adalah bagian penting dari pengalaman berbelanja online. <br> Karena itu, kami bekerja keras untuk memastikan pesanan Anda dikirim dengan biaya terjangkau, aman, dan tepat waktu. <br></span>
                         </div>
     
                         <div style="width: 260px;">
@@ -248,7 +241,7 @@
                                         <path d="M8 1a2 2 0 0 1 2 2v2H6V3a2 2 0 0 1 2-2m3 4V3a3 3 0 1 0-6 0v2H3.36a1.5 1.5 0 0 0-1.483 1.277L.85 13.13A2.5 2.5 0 0 0 3.322 16h9.355a2.5 2.5 0 0 0 2.473-2.87l-1.028-6.853A1.5 1.5 0 0 0 12.64 5zm-1 1v1.5a.5.5 0 0 0 1 0V6h1.639a.5.5 0 0 1 .494.426l1.028 6.851A1.5 1.5 0 0 1 12.678 15H3.322a1.5 1.5 0 0 1-1.483-1.723l1.028-6.851A.5.5 0 0 1 3.36 6H5v1.5a.5.5 0 1 0 1 0V6z"/>
                                       </svg>
                             </div>
-                            <p>Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. <br> Voluptatem ratione </p>
+                            <p>Di toko kami, pengalaman belanja Anda adalah prioritas utama. <br> Nikmati proses belanja yang cepat dan praktis, mulai dari memilih produk hingga melakukan pembayaran. <br></p>
                         </div>
                     </div>
                     
@@ -259,7 +252,7 @@
                                     <path d="M8 1a2 2 0 0 1 2 2v2H6V3a2 2 0 0 1 2-2m3 4V3a3 3 0 1 0-6 0v2H3.36a1.5 1.5 0 0 0-1.483 1.277L.85 13.13A2.5 2.5 0 0 0 3.322 16h9.355a2.5 2.5 0 0 0 2.473-2.87l-1.028-6.853A1.5 1.5 0 0 0 12.64 5zm-1 1v1.5a.5.5 0 0 0 1 0V6h1.639a.5.5 0 0 1 .494.426l1.028 6.851A1.5 1.5 0 0 1 12.678 15H3.322a1.5 1.5 0 0 1-1.483-1.723l1.028-6.851A.5.5 0 0 1 3.36 6H5v1.5a.5.5 0 1 0 1 0V6z"/>
                                 </svg>
                         </div>
-                        <p>Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. <br> Voluptatem ratione </p>
+                        <p> Seluruh produk yang kami tawarkan adalah barang official  langsung dari brand atau distributor resmi. <br>sehingga Anda bisa berbelanja dengan tenang dan tanpa keraguan. </p>
                     </div>
                     
                     <div style="width: 260px;">
@@ -269,7 +262,7 @@
                                 <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5 5 0 0 0 8 3M3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9z"/>
                               </svg>
                         </div>
-                        <p>Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. <br> Voluptatem ratione </p>
+                        <p>Kami ingin Anda puas dengan setiap pembelian. <br>Jika produk yang Anda terima tidak sesuai harapan, <br>kami menyediakan layanan pengembalian yang mudah dan cepat. </p>
                     </div>
                 </div>
 
@@ -279,7 +272,7 @@
                 </div>
             </div>
 
-        <footer class="footer p-5" style="background-color: #d4d4d4;margin-top: 100px">
+        <footer id="ftr" class="footer p-5" style="background-color: #d4d4d4;margin-top: 100px">
             <div class=" container align-items-center">
                 <h5>Merchdream</h5>
                 <span>Donec facilisis quam ut purus rutrum lobortis. <br> Donec vitae odio quis nisl dapibus malesuada. <br> Nullam ac aliquet velit. Aliquam vulputate velit <br> imperdiet dolor tempor tristique. Pellentesque <br> habitant</span>

@@ -119,8 +119,10 @@
             <!-- View -->
             <div class="col-md-2 card"
                 style="width: 200px; height: 300px; border: none; border-radius: 20px; box-shadow: #000000 2px 2px 20px; margin-bottom: 20px;">
-                <img src="{{ asset('storage/public/'.$produk->foto) }}" alt="{{ $produk->produk }}"
+                <a href="{{ route('produk.detail', ['id' => $item->id]) }}">
+                <img src="{{ asset('storage/public/'.$produk->foto) }}" alt=""
                     style="border-radius: 15px; margin-top: 30px; width: 100%; height: 150px; object-fit: cover;">
+                    </a>
                 <div style="margin-top: 10px; text-align: center; font-weight: bold; font-family: 'Trebuchet MS', Arial, sans-serif;">
                     <span style="font-size: 13px;">{{ $produk->produk }}</span> <br>
                     <span style="font-size: 10px;">Stok: {{ $produk->stok }}</span> <!-- Nama Produk -->

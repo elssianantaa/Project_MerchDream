@@ -42,7 +42,7 @@
             <div class="collapse navbar-collapse ms-5">
                 <ul class="navbar-nav container mr-5" style="color: #b5b5b5;">
                     <li class="nav-item mr-4">
-                        <a href="" class="nav-link animated-link" style="color: #b5b5b5;">Home</a>
+                        <a href="/tampilan" class="nav-link animated-link" style="color: #b5b5b5;">Home</a>
                     </li>
 
                     <li class="nav-item mr-4">
