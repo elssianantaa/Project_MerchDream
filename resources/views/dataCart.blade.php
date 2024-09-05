@@ -12,14 +12,14 @@
     @section('content')
 
     <div class="container" style="">
-        <h3>Data Penjualan</h3>
+        
    
   
 
 @if (Session::get('pesan'))
 {{ Session::get('pesan')}}
     @endif
-    <table class="table" style="width: 800px;height: 100px;margin-top: -650px">
+    <table class="table" style="width: 800px;height: 100px;margin-top: -400px">
         <thead class="table-dark" style="font-size: 10px">
             <tr>
                 <td>NO</td>
